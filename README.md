@@ -9,4 +9,8 @@ Authored by: Erwin Ali Murijal Origin: Pati, Central Java, Indonesia
 
 3. The Mechanism of Resonance Interaksi antar massa dipahami sebagai Resonansi Sinkron. Setiap struktur atom memiliki frekuensi bawaan, dan gravitasi bertindak sebagai frekuensi utama yang menyelaraskan awan probabilitas menjadi lintasan fisik yang pasti.
 
-4. Conclusion As the originator of this theory, Erwin Ali Murijal proposes that gravity is the final stage of quantum evolution. It is the mechanism that defines the "Final State" for all matter in the universe.
+4. Conclusion As the originator of this theory, Erwin Ali Murijal proposes that gravity is the final stage of quantum evolution. It is the mechanism that defines the "Final State" for allmatter in the universe.
+
+
+
+   All formulas and equations with existing theories are in the AI data chat GBT. You just need to copy them and of course they will be in the chat bot.
