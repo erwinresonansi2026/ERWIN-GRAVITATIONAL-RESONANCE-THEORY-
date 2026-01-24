@@ -1,140 +1,121 @@
-#!/usr/bin/env python3
 """
 Resonant Gravity Framework (Erwin 2026)
---------------------------------------
+======================================
 
-This module implements a phenomenological, resonance-based
-interpretation of gravitational orbital structure.
+Author:
+    Erwin Ali Murijal (Indonesia)
 
-The code is:
-- Universal (not hard-coded to the Solar System)
-- Explicit about required inputs
-- Free of speculative technological claims
-- Intended for numerical consistency checks only
+Purpose:
+    This framework proposes a resonance-based interpretation of
+    gravitational orbital structure using a discrete phase constant.
+    The model is phenomenological and intended for empirical testing,
+    not as a replacement for General Relativity or Quantum Mechanics.
 
-Author: Erwin Ali Murijal
+
+------------------------------------------------------------
+1. CORE IDEA
+------------------------------------------------------------
+
+Gravity is treated as an organizing interaction that drives matter
+toward discrete equilibrium phases.
+
+Orbital stability emerges when matter aligns with specific
+gravitational resonance phases.
+
+Space is assumed to be absolute.
+Time is treated as a consequence of material transitions from
+superposition to realized configuration.
+
+
+------------------------------------------------------------
+2. FUNDAMENTAL CONSTANT
+------------------------------------------------------------
+
+A universal phase constant is introduced:
+
+    K36 = 36 degrees = π / 5 radians
+
+K36 acts as a discrete gravitational phase quantum,
+analogous to π in geometry but applied to orbital phase structure.
+
+K36 is:
+- dimensionless
+- independent of mass, distance, and time
+- empirically motivated by orbital spacing patterns
+
+
+------------------------------------------------------------
+3. RESONANT ORBIT MODEL
+------------------------------------------------------------
+
+Stable orbital radii follow an exponential resonance law:
+
+    r_n = r_0 · exp( α · n · K36 )
+
+Where:
+    r_n  = orbital radius at phase index n
+    r_0  = reference radius of the innermost stable orbit
+    α    = system-dependent scaling parameter
+    n    = integer resonance index (n = 0, 1, 2, ...)
+    K36  = π / 5
+
+The parameter α is not assumed,
+but inferred from observed orbital data.
+
+
+------------------------------------------------------------
+4. INTERPRETATION
+------------------------------------------------------------
+
+• Gravity does not "force" matter into orbit,
+  but provides a resonance landscape.
+
+• Matter naturally accumulates at phase-aligned minima
+  of gravitational resonance.
+
+• Regions that do not align with K36 phases
+  cannot form stable satellites and may remain as rings
+  or diffuse material.
+
+
+------------------------------------------------------------
+5. SCOPE OF APPLICATION
+------------------------------------------------------------
+
+The framework is intended to be applied to:
+
+- Planetary systems
+- Satellite systems
+- Ring systems
+- Exoplanetary systems
+- Multi-body gravitational hierarchies
+
+It is not restricted to the Solar System.
+
+
+------------------------------------------------------------
+6. RELATION TO EXISTING THEORIES
+------------------------------------------------------------
+
+• Does not replace Newtonian gravity or General Relativity
+• Does not modify Einstein field equations
+• Acts as a structural / organizational layer
+  on top of classical gravity
+
+The framework is compatible with empirical testing
+and falsification.
+
+
+------------------------------------------------------------
+7. CURRENT STATUS
+------------------------------------------------------------
+
+Theoretical development is intentionally paused.
+
+Next steps focus on:
+- observational testing
+- statistical validation
+- cross-system comparison
+
+No technological or propulsion claims are made.
 """
-
-import math
-from typing import List, Tuple, Dict
-
-# ==========================================================
-# 1. FUNDAMENTAL STRUCTURAL CONSTANT
-# ==========================================================
-
-PI = math.pi
-K36 = PI / 5.0   # Universal gravitational phase quantum (36 degrees)
-
-# ==========================================================
-# 2. CORE RESONANCE FUNCTIONS
-# ==========================================================
-
-def gravitational_phase(n: int) -> float:
-    """
-    Discrete gravitational resonance phase.
-    """
-    return n * K36
-
-
-def resonant_orbit_radius(r0: float, alpha: float, n: int) -> float:
-    """
-    Resonant orbital radius model.
-
-    r_n = r0 * exp(alpha * n * K36)
-    """
-    return r0 * math.exp(alpha * gravitational_phase(n))
-
-
-# ==========================================================
-# 3. PARAMETER INFERENCE
-# ==========================================================
-
-def infer_alpha(observed_radii: List[float]) -> float:
-    """
-    Infer the resonance scaling parameter alpha
-    from ordered orbital radii.
-
-    At least two radii are required.
-    """
-    if len(observed_radii) < 2:
-        raise ValueError("At least two orbital radii are required.")
-
-    log_ratios = []
-    for i in range(len(observed_radii) - 1):
-        r1 = observed_radii[i]
-        r2 = observed_radii[i + 1]
-        log_ratios.append(math.log(r2 / r1))
-
-    return sum(log_ratios) / (len(log_ratios) * K36)
-
-
-# ==========================================================
-# 4. GENERIC SYSTEM SOLVER
-# ==========================================================
-
-def solve_resonant_system(
-    observed_radii: List[float],
-    labels: List[str] | None = None
-) -> Tuple[float, List[Dict]]:
-    """
-    Solve a generic gravitational system using
-    the resonant gravity framework.
-    """
-
-    if labels is None:
-        labels = [f"Object-{i}" for i in range(len(observed_radii))]
-
-    r0 = observed_radii[0]
-    alpha = infer_alpha(observed_radii)
-
-    results = []
-
-    for i, name in enumerate(labels):
-        modeled = resonant_orbit_radius(r0, alpha, i)
-        observed = observed_radii[i]
-        error = 100.0 * (modeled - observed) / observed
-
-        results.append({
-            "object": name,
-            "phase_index": i,
-            "phase": gravitational_phase(i),
-            "observed_radius": observed,
-            "modeled_radius": modeled,
-            "relative_error_percent": error
-        })
-
-    return alpha, results
-
-
-# ==========================================================
-# 5. EXAMPLE USAGE (OPTIONAL)
-# ==========================================================
-
-if __name__ == "__main__":
-    # Example dataset (e.g. Solar System, but can be any system)
-    observed = [
-        0.387, 0.723, 1.000, 1.524,
-        5.203, 9.537, 19.191, 30.068
-    ]
-
-    labels = [
-        "Mercury", "Venus", "Earth", "Mars",
-        "Jupiter", "Saturn", "Uranus", "Neptune"
-    ]
-
-    alpha, solution = solve_resonant_system(observed, labels)
-
-    print("\nResonant Gravity Solution")
-    print("-------------------------")
-    print(f"K36   = {K36:.6f}")
-    print(f"alpha= {alpha:.6f}\n")
-
-    for item in solution:
-        print(
-            f"{item['object']:<8} | "
-            f"Obs={item['observed_radius']:.3f} | "
-            f"Model={item['modeled_radius']:.3f} | "
-            f"Error={item['relative_error_percent']:+.2f}% | "
-            f"Phase={item['phase']:.3f}"
-        )
-        
