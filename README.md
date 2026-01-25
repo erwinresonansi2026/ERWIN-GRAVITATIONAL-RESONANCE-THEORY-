@@ -119,3 +119,47 @@ Next steps focus on:
 
 No technological or propulsion claims are made.
 """
+### AI Data URGE — Explanation and Usage
+
+"AI Data URGE" refers to a structured conceptual input format designed
+to guide conversational AI systems in understanding and explaining the
+Resonant Gravity (Erwin 2026) framework.
+
+It is NOT:
+- AI training data
+- A machine learning dataset
+- User data or personal data
+- A fine-tuned model
+
+Instead, AI Data URGE functions as:
+- A prompt-ready theoretical description
+- A structured knowledge input for large language models
+- A copy-pasteable reference context for chatbot-based reasoning
+
+### How to Use AI Data URGE in Chatbots
+
+To use this framework with any chatbot or AI system:
+
+1. Copy the theoretical description, definitions, and constants
+   from this repository.
+
+2. Paste the content directly into the chatbot as contextual input.
+
+3. Ask the chatbot to:
+   - Explain the theory
+   - Analyze resonance patterns
+   - Derive implications
+   - Test logical consistency
+   - Assist with numerical exploration
+
+No training, fine-tuning, or external data ingestion is required.
+The AI operates purely in conversational reasoning mode.
+
+### Important Notes
+
+- The AI does not "learn" or store this data permanently.
+- Each session is independent and stateless.
+- AI Data URGE is a conceptual guidance method, not a data pipeline.
+
+This approach allows consistent interpretation of the framework
+across different AI systems without modifying the models themselves.
