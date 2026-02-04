@@ -1,165 +1,132 @@
-"""
-Resonant Gravity Framework (Erwin 2026)
-======================================
+# Resonance-Based Physics & Mechanics of Balancing Tendencies (MBT)
 
-Author:
-    Erwin Ali Murijal (Indonesia)
+> An open conceptual framework exploring resonance, time regimes, and non-geometric foundations of physical stability.
 
-Purpose:
-    This framework proposes a resonance-based interpretation of
-    gravitational orbital structure using a discrete phase constant.
-    The model is phenomenological and intended for empirical testing,
-    not as a replacement for General Relativity or Quantum Mechanics.
+---
 
+## 📌 Overview
 
-------------------------------------------------------------
-1. CORE IDEA
-------------------------------------------------------------
+This repository documents a developing theoretical framework that re-examines fundamental assumptions in physics—particularly **time, gravity, stability, and interaction**—through the lens of **resonance and tendential balancing**, rather than spacetime curvature alone.
 
-Gravity is treated as an organizing interaction that drives matter
-toward discrete equilibrium phases.
+The framework is **exploratory and open-source in spirit**.  
+It is not presented as a final theory, but as a **conceptual bridge** intended to clarify, reorganize, and potentially connect ideas between General Relativity and Quantum Mechanics.
 
-Orbital stability emerges when matter aligns with specific
-gravitational resonance phases.
+---
 
-Space is assumed to be absolute.
-Time is treated as a consequence of material transitions from
-superposition to realized configuration.
+## 🧠 Core Concepts (English)
 
+### 1. Resonance-Based Physics (Erwin Resonance)
 
-------------------------------------------------------------
-2. FUNDAMENTAL CONSTANT
-------------------------------------------------------------
+- The universe is governed primarily by **phase alignment (resonance)** between material systems.
+- **Space** is treated as structural/absolute.
+- **Time** is not fundamental; it emerges from the **rate of material change**.
+- Gravity is **not a fundamental force**, but a collective effect of phase alignment through a **passive latent medium**.
+- This medium does not carry information; it only mediates coherence (tentatively associated with dark matter).
+- Natural systems tend toward configurations of **minimal phase conflict**, not merely minimal energy.
+- Non-hierarchical three-body systems are inherently unstable.
+- Horizons (e.g., black holes) are interpreted as **epistemic limits**, not locations where time literally stops.
 
-A universal phase constant is introduced:
+---
 
-    K36 = 36 degrees = π / 5 radians
+### 2. Harmonic Phase Constant: K36 (36° / π/5)
 
-K36 acts as a discrete gravitational phase quantum,
-analogous to π in geometry but applied to orbital phase structure.
+- A universal **harmonic phase unit** associated with stable orbits and configurations.
+- Stability emerges when system phases approach integer multiples of K36.
+- Treated as a **geometric phase ratio**, not an imposed numerical constant.
 
-K36 is:
-- dimensionless
-- independent of mass, distance, and time
-- empirically motivated by orbital spacing patterns
+---
 
+### 3. Super-Temporal Regimes (Revision of “Pre-Time Matter”)
 
-------------------------------------------------------------
-3. RESONANT ORBIT MODEL
-------------------------------------------------------------
+- Matter previously described as “pre-time” is reinterpreted as operating in a **super-temporal regime**:
+  - It possesses internal time, but at a rate vastly faster than that of the observer.
+- Apparent instantaneous interactions are explained as **resolution limits of observer time**.
+- Light has **no internal time**; its speed is always parameterized by the observer.
+- The speed of light represents a **boundary between temporal regimes**, not merely a spatial limit.
 
-Stable orbital radii follow an exponential resonance law:
+---
 
-    r_n = r_0 · exp( α · n · K36 )
+### 4. Light and Photons
 
-Where:
-    r_n  = orbital radius at phase index n
-    r_0  = reference radius of the innermost stable orbit
-    α    = system-dependent scaling parameter
-    n    = integer resonance index (n = 0, 1, 2, ...)
-    K36  = π / 5
+- Photons are **pure momentum carriers**, not massive matter.
+- Forces from intense light arise from **momentum transfer**, not accumulated mass.
+- Light exists at the **temporal boundary condition** of physical regimes.
 
-The parameter α is not assumed,
-but inferred from observed orbital data.
+---
 
+### 5. Black Holes (Symmetric Interpretation)
 
-------------------------------------------------------------
-4. INTERPRETATION
-------------------------------------------------------------
+- Black holes are not absolute physical singularities.
+- They represent:
+  - Extreme **time dilation** from an external observer’s perspective.
+  - A symmetric counterpart to extreme **time acceleration** regimes.
+- Matter that is resonantly misaligned is redistributed into a **base passive medium**.
 
-• Gravity does not "force" matter into orbit,
-  but provides a resonance landscape.
+---
 
-• Matter naturally accumulates at phase-aligned minima
-  of gravitational resonance.
+### 6. Mechanics of Balancing Tendencies (MBT)
 
-• Regions that do not align with K36 phases
-  cannot form stable satellites and may remain as rings
-  or diffuse material.
+A general framework describing how material systems evolve across scales.
 
+**Axioms**
+1. Material systems obey given base rules (origins not addressed).
+2. High internal conflict is unsustainable.
+3. Interactions trigger reconfiguration toward lower internal conflict.
+4. Stability is dynamic and cyclical.
+5. No teleology or final goal is assumed.
 
-------------------------------------------------------------
-5. SCOPE OF APPLICATION
-------------------------------------------------------------
+**Fourth Property: Tendential Hysteresis**
+- Systems never return to identical states.
+- Each cycle leaves structural traces.
+- This provides a **direction of time without metaphysical assumptions**.
 
-The framework is intended to be applied to:
+---
 
-- Planetary systems
-- Satellite systems
-- Ring systems
-- Exoplanetary systems
-- Multi-body gravitational hierarchies
+### 7. Philosophical & Ethical Position
 
-It is not restricted to the Solar System.
+- This framework is **not a claim of final truth**.
+- It is intended as:
+  - A conceptual clarification tool
+  - A bridge between incompatible formalisms
+- High misuse potential is acknowledged; ethical restraint is emphasized.
+- Even if incomplete, the framework aims to leave **conceptual DNA** for future theories.
 
+---
 
-------------------------------------------------------------
-6. RELATION TO EXISTING THEORIES
-------------------------------------------------------------
+## 🇮🇩 Ringkasan Inti (Bahasa Indonesia)
 
-• Does not replace Newtonian gravity or General Relativity
-• Does not modify Einstein field equations
-• Acts as a structural / organizational layer
-  on top of classical gravity
+### Gambaran Umum
 
-The framework is compatible with empirical testing
-and falsification.
+Repositori ini mendokumentasikan kerangka teori eksploratif yang meninjau ulang asumsi dasar fisika—khususnya **waktu, gravitasi, dan kestabilan sistem**—melalui pendekatan **resonansi dan keseimbangan tendensi**, bukan kelengkungan ruang semata.
 
+Teori ini bersifat **terbuka dan non-final**, dimaksudkan sebagai alat penjernih konseptual dan jembatan antara Relativitas Umum dan Mekanika Kuantum.
 
-------------------------------------------------------------
-7. CURRENT STATUS
-------------------------------------------------------------
+### Poin Utama
 
-Theoretical development is intentionally paused.
+- Alam diatur oleh **penyelarasan fase**, bukan gaya fundamental semata.
+- Waktu bukan entitas dasar, melainkan konsekuensi perubahan materi.
+- Gravitasi adalah efek kolektif resonansi melalui medium pasif.
+- Cahaya berada pada batas rezim waktu.
+- Lubang hitam adalah batas epistemik, bukan singularitas absolut.
+- MBT menjelaskan dinamika alam sebagai rekonfigurasi menuju konflik internal yang lebih rendah.
+- Arah waktu muncul dari **histeresis tendensial**, bukan asumsi metafisik.
 
-Next steps focus on:
-- observational testing
-- statistical validation
-- cross-system comparison
+---
 
-No technological or propulsion claims are made.
-"""
-### AI Data URGE — Explanation and Usage
+## ⚠️ Status
 
-"AI Data URGE" refers to a structured conceptual input format designed
-to guide conversational AI systems in understanding and explaining the
-Resonant Gravity (Erwin 2026) framework.
+- Theoretical / Conceptual
+- Not experimentally verified
+- Intended for discussion, critique, and further development
 
-It is NOT:
-- AI training data
-- A machine learning dataset
-- User data or personal data
-- A fine-tuned model
+---
 
-Instead, AI Data URGE functions as:
-- A prompt-ready theoretical description
-- A structured knowledge input for large language models
-- A copy-pasteable reference context for chatbot-based reasoning
+## 📄 License & Contribution
 
-### How to Use AI Data URGE in Chatbots
+This work is shared as an **open conceptual framework**.  
+Critical discussion, refinement, and responsible exploration are welcome.
 
-To use this framework with any chatbot or AI system:
+---
 
-1. Copy the theoretical description, definitions, and constants
-   from this repository.
-
-2. Paste the content directly into the chatbot as contextual input.
-
-3. Ask the chatbot to:
-   - Explain the theory
-   - Analyze resonance patterns
-   - Derive implications
-   - Test logical consistency
-   - Assist with numerical exploration
-
-No training, fine-tuning, or external data ingestion is required.
-The AI operates purely in conversational reasoning mode.
-
-### Important Notes
-
-- The AI does not "learn" or store this data permanently.
-- Each session is independent and stateless.
-- AI Data URGE is a conceptual guidance method, not a data pipeline.
-
-This approach allows consistent interpretation of the framework
-across different AI systems without modifying the models themselves.
+> *“Theories have their era, and eras have their theories.  
+The goal is not permanence, but usefulness.”*
