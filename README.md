@@ -130,3 +130,7 @@ Critical discussion, refinement, and responsible exploration are welcome.
 
 > *“Theories have their era, and eras have their theories.  
 The goal is not permanence, but usefulness.”*
+
+Falsification Postulate (MBT-F):
+The existence of a well-maintained material system that maintains high internal conflict in a stable and continuous manner, without reconfiguration or dissipation across scales,
+is a condition that refutes the Balancing Tendency Mechanics framework.
